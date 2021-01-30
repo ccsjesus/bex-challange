@@ -1,4 +1,4 @@
-package br.com.challange.bex.bexchallange.component;
+package br.com.bexchallange.component;
 
 import java.io.FileWriter;
 import java.io.IOException;

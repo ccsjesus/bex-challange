@@ -1,4 +1,4 @@
-package br.com.challange.bex.bexchallange.service;
+package br.com.bexchallange.service;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,12 +17,12 @@ import org.springframework.stereotype.Service;
 import com.opencsv.CSVWriter;
 import com.opencsv.bean.CsvToBeanBuilder;
 
-import br.com.challange.bex.bexchallange.component.RotasComponent;
-import br.com.challange.bex.bexchallange.dto.ArestaDTO;
-import br.com.challange.bex.bexchallange.entity.BexsAresta;
-import br.com.challange.bex.bexchallange.entity.BexsVertice;
-import br.com.challange.bex.bexchallange.util.EntidadeResult;
-import br.com.challange.bex.bexchallange.util.ResultUtil;
+import br.com.bexchallange.component.RotasComponent;
+import br.com.bexchallange.dto.ArestaDTO;
+import br.com.bexchallange.entity.BexsAresta;
+import br.com.bexchallange.entity.BexsVertice;
+import br.com.bexchallange.util.EntidadeResult;
+import br.com.bexchallange.util.ResultUtil;
 
 @Service
 public class BexRoutesServices {

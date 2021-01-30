@@ -1,4 +1,4 @@
-package br.com.challange.bex.bexchallange.entity;
+package br.com.bexchallange.entity;
 
 import java.util.ArrayList;
 import java.util.List;

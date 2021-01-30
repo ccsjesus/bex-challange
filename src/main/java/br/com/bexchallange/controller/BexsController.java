@@ -1,4 +1,4 @@
-package br.com.challange.bex.bexchallange.controller;
+package br.com.bexchallange.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.challange.bex.bexchallange.dto.ArestaDTO;
-import br.com.challange.bex.bexchallange.service.BexRoutesServices;
-import br.com.challange.bex.bexchallange.util.EntidadeResult;
+import br.com.bexchallange.dto.ArestaDTO;
+import br.com.bexchallange.service.BexRoutesServices;
+import br.com.bexchallange.util.EntidadeResult;
 
 @RestController
 @RequestMapping("api/bexs/rota")

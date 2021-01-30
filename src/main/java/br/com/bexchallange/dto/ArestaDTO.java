@@ -1,8 +1,8 @@
-package br.com.challange.bex.bexchallange.dto;
+package br.com.bexchallange.dto;
 
 import com.opencsv.bean.CsvBindByPosition;
 
-import br.com.challange.bex.bexchallange.entity.Routes;
+import br.com.bexchallange.entity.Routes;
 
 public class ArestaDTO extends Routes {
 	

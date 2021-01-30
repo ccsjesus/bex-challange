@@ -1,4 +1,4 @@
-package br.com.challange.bex.bexchallange.util;
+package br.com.bexchallange.util;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import br.com.challange.bex.bexchallange.util.EntidadeResult.Result;
+import br.com.bexchallange.util.EntidadeResult.Result;
 
 @Component
 public class ResultUtil {

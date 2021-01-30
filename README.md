@@ -24,69 +24,35 @@ A aplicação está estrutura da seguinte forma:
 bex-challange
 	├───.mvn
 	│   └───wrapper
-	├───.settings
 	├───app
-	├───logs
-	├───src
-	│   ├───main
-	│   │   ├───java
-	│   │   │   ├───br
-	│   │   │   │   └───com
-	│   │   │   │       └───challange
-	│   │   │   │           └───bex
-	│   │   │   │               └───bexchallange
-	│   │   │   │                   ├───component
-	│   │   │   │                   ├───controller
-	│   │   │   │                   ├───dto
-	│   │   │   │                   ├───entity
-	│   │   │   │                   ├───service
-	│   │   │   │                   └───util
-	│   │   │   └───META-INF
-	│   │   └───resources
-	│   └───test
-	│       └───java
-	│           └───br
-	│               └───com
-	│                   └───challange
-	│                       └───bex
-	│                           └───bexchallange
-	└───target
-	    ├───classes
-	    │   ├───br
-	    │   │   └───com
-	    │   │       └───challange
-	    │   │           └───bex
-	    │   │               └───bexchallange
-	    │   │                   ├───component
-	    │   │                   ├───controller
-	    │   │                   ├───dto
-	    │   │                   ├───entity
-	    │   │                   ├───service
-	    │   │                   └───util
-	    │   └───META-INF
-	    │       └───maven
-	    │           └───br.com.challange.bex
-	    │               └───bex-challange
-	    ├───generated-sources
-	    │   └───annotations
-	    ├───generated-test-sources
-	    │   └───test-annotations
-	    ├───logs
-	    ├───maven-archiver
-	    ├───maven-status
-	    │   └───maven-compiler-plugin
-	    │       ├───compile
-	    │       │   └───default-compile
-	    │       └───testCompile
-	    │           └───default-testCompile
-	    └───test-classes
-	        └───br
-	            └───com
-	                └───challange
-	                    └───bex
-	                        └───bexchallange
+	└───src
+	    ├───main
+	    │   ├───java
+	    │   │   ├───br
+	    │   │   │   └───com
+	    │   │   │       └───challange
+	    │   │   │           └───bex
+	    │   │   │               └───bexchallange
+	    │   │   │                   ├───component
+	    │   │   │                   ├───controller
+	    │   │   │                   ├───dto
+	    │   │   │                   ├───entity
+	    │   │   │                   ├───service
+	    │   │   │                   └───util
+	    │   │   └───META-INF
+	    │   └───resources
+	    └───test
+	        └───java
+	            └───br
+	                └───com
+	                    └───challange
+	                        └───bex
+	                            └───bexchallange
+	
 ```
-
+- app pasta que contém o arquivo executável java.
+- src pasta que contém o código fonte do projeto.
+	- a estrutura do projeto segue da seguinte forma br/com/challange/bex/bexchallange
 
 Acessar diretório do arquivo jar app
 

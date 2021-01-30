@@ -1,4 +1,4 @@
-package br.com.challange.bex.bexchallange.util;
+package br.com.bexchallange.util;
 
 import java.util.HashMap;
 

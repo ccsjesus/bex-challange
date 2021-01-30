@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 
-import br.com.challange.bex.bexchallange.service.BexRoutesServices;
+import br.com.bexchallange.service.BexRoutesServices;
 
 @SpringBootTest
 class BexChallangeApplicationTests {

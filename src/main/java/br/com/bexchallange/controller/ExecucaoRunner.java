@@ -1,4 +1,4 @@
-package br.com.challange.bex.bexchallange.controller;
+package br.com.bexchallange.controller;
 
 import java.util.Scanner;
 
@@ -9,8 +9,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import br.com.challange.bex.bexchallange.service.BexRoutesServices;
-import br.com.challange.bex.bexchallange.util.EntidadeResult;
+import br.com.bexchallange.service.BexRoutesServices;
+import br.com.bexchallange.util.EntidadeResult;
 
 @Component
 public class ExecucaoRunner implements CommandLineRunner {
