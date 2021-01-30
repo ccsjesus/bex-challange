@@ -1,4 +1,4 @@
-package br.com.challange.bex.bexchallange;
+package br.com.bexchallange;
 
 import java.io.IOException;
 

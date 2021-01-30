@@ -1,4 +1,4 @@
-package br.com.bexchallange.controller;
+package br.com.bexchallange.component;
 
 import java.util.Scanner;
 

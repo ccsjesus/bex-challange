@@ -6,9 +6,10 @@ Aplicação desenvolvida para calcular a melhor rota de viagem dada uma origem e
 
 Algumas instruções a seguir serão passadas para iniciar a aplicação.
 
-### Prerequisites
+### Requisitos
 
-- Java 8+
+1. JDK 8+
+2. Apache Maven 3.2.x
 
 Para saber se a máquina possui  o Java instalado basta executar o comando abaixo:
 
@@ -18,106 +19,22 @@ java -version
 
 ### Execução do programa
 
-A aplicação está estrutura da seguinte forma:
+1. ` cd app`
+2. ` java -jar bex-challange.jar input-routes.csv`
 
-```bash
-bex-challange
-	├───.mvn
-	│   └───wrapper
-	├───app
-	└───src
-	    ├───main
-	    │   ├───java
-	    │   │   ├───br
-	    │   │   │   └───com
-	    │   │   │       └───challange
-	    │   │   │           └───bex
-	    │   │   │               └───bexchallange
-	    │   │   │                   ├───component
-	    │   │   │                   ├───controller
-	    │   │   │                   ├───dto
-	    │   │   │                   ├───entity
-	    │   │   │                   ├───service
-	    │   │   │                   └───util
-	    │   │   └───META-INF
-	    │   └───resources
-	    └───test
-	        └───java
-	            └───br
-	                └───com
-	                    └───challange
-	                        └───bex
-	                            └───bexchallange
-	
-```
-- app pasta que contém o arquivo executável java.
-- src pasta que contém o código fonte do projeto.
-	- a estrutura do projeto segue da seguinte forma br/com/challange/bex/bexchallange
+Nota: o arquivo **input-routes.csv** deve estar na mesma pasta, caso contrário deverá ser informado a localização, exemplo:
 
-Acessar diretório do arquivo jar app
-
-```
-Give the example
+```shell
+java -jar bex-challange.jar E:\bex-challange\input-routes.csv
 ```
 
-And repeat
+## Estrutura do Projeto
 
-```
-until finished
-```
+ **Foi utilizado a estrutura Java padrão para codificação e Spring Boot para a exposição das APIs**
 
-End with an example of getting some data out of the system or using it for a little demo
+* O código Java referente ao componentes gerenciados pelo Spring estão localizado em  [`component`](src/main/java/br/com/bexchallange/component) diretório para qualquer component.
+* Java code for Helper Classes are located under [`helper`](src/main/java/com/intuit/developer/sampleapp/crud/helper) directory for each entitiy
+* Java code for QBO DataService object are located under [`qbo`](src/main/java/com/intuit/developer/sampleapp/crud/qbo) directory 
+* Config files are located in the [`resources`](src/main/resources) directory
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=SampleApp-CRUD-Java
