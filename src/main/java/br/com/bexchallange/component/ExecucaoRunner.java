@@ -26,9 +26,14 @@ public class ExecucaoRunner implements CommandLineRunner {
     		System.out.print("please enter the route: ");
     		Scanner scanner = new Scanner(System.in);
     		String line = scanner.nextLine();
-    		ResponseEntity<EntidadeResult> resultado = bexRoutesServices.consultarMelhorRota(line);
-    		
-    		System.out.println("best route: " +resultado.getBody().getResult().getDados());
+    		if("".equals(line)) {
+    			System.out.println("please pass a route valid in the format ORG-DEST !" + "\n");
+    		} else {
+    			ResponseEntity<EntidadeResult> resultado = bexRoutesServices.consultarMelhorRota(line);
+    			
+    			System.out.println("best route: " +resultado.getBody().getResult().getDados());
+    			
+    		}
     	}
 	}
 

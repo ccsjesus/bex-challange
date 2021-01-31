@@ -9,7 +9,7 @@ Algumas instruções a seguir serão passadas para iniciar a aplicação.
 ### Requisitos
 
 1. JDK 8+
-2. Apache Maven 3.2.x
+2. Apache Maven 3.6.x
 
 Para saber se a máquina possui  o Java instalado basta executar o comando abaixo:
 
@@ -17,15 +17,22 @@ Para saber se a máquina possui  o Java instalado basta executar o comando abaix
 java -version
 ```
 
+Para saber se a máquina possui o Maven instalado basta executar o comando abaixo:
+
+```shell
+mvn -v
+```
+
 ### Execução do programa
 
-1. ` cd app`
-2. ` java -jar bex-challange.jar input-routes.csv`
+1. ` cd bex-challange-master`
+2. ` mvn clean install`
+2. ` java -jar target\bex-challange-0.0.1.jar input-routes.csv`
 
 Nota: o arquivo **input-routes.csv** deve estar na mesma pasta, caso contrário deverá ser informado a localização, exemplo:
 
 ```shell
-java -jar bex-challange.jar E:\bex-challange\input-routes.csv
+java -jar target\bex-challange-0.0.1.jar E:\bex-challange\input-routes.csv
 ```
 
 ## Estrutura do Projeto
