@@ -46,31 +46,16 @@ public class BexRoutesServices {
 			List<ArestaDTO> beans = new CsvToBeanBuilder(rotasComponent.getReader()).withType(ArestaDTO.class).withSeparator(';')
 					.build().parse();
 
-			this.addVertice("GRU");
-			this.addVertice("BRC");
-			this.addVertice("SCL");
-			this.addVertice("ORL");
-			this.addVertice("CDG");
-			this.addVertice("GRU");
-
 			beans.forEach(c -> {
 				this.addAresta(c.getValor(), c.getOrigem(), c.getDestino());
+				this.addVertice(c.getOrigem());
+				this.addVertice(c.getDestino());
 			});
 
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 
-		//printArvore();
-
-		Map<Integer, List<BexsVertice>> mapVertices = this.melhorCaminho(new BexsVertice("BRC"),
-				new BexsVertice("CDG"));
-		/*mapVertices.entrySet().stream().forEach(e -> {
-			e.getValue().forEach(c -> {
-				System.out.print(c.getNome() + " ");
-			});
-			System.out.print("- " + e.getKey());
-		});*/
 	}
 
 	public ResponseEntity<EntidadeResult> incluirRota(BexsAresta bexAresta) {

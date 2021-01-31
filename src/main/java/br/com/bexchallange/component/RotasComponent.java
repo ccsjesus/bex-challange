@@ -38,5 +38,12 @@ public class RotasComponent {
 		return writer;
 	}
 
+	public void setReader(Reader reader) {
+		this.reader = reader;
+	}
+
+	public void setWriter(Writer writer) {
+		this.writer = writer;
+	}
 	
 }
