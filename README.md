@@ -40,12 +40,15 @@ java -jar target\bex-challange-0.0.1.jar E:\bex-challange\input-routes.csv
  **Foi utilizado a estrutura Java padrão para codificação e Spring Boot para a exposição das APIs**
 
 * Classes Java referentes aos componentes gerenciados pelo Spring estão localizado em [`component`](src/main/java/br/com/bexchallange/component) diretório para qualquer component.
+* Classes Java referentes às configurações do projeto [`component`](src/main/java/br/com/bexchallange/configuration) diretório para qualquer configuration.
 * Classes Java referentes aos controladores, responsáveis por receber as requisições e expor as APIs localizados em [`controller`](src/main/java/br/com/bexchallange/controller) esse diretório é para todos os controloadores criados.
 * Classes Java responsáveis por realizar a blindagem de atributos não necessários para a camada services, esta, por sua vez está localizado em  [`dto`](src/main/java/br/com/bexchallange/dto). 
 * Classes Java para referir-se às entidades, apesar de não utilizar o JPA, considerei Aresta, Vertice e Routes como entidades para o projeto localizados em  [`entity`](src/main/java/br/com/bexchallange/entity).
-* Classes Java para responsáveis por conter as regras de negocios, sendo acessados pelas demais classes, localizado em  [`service`](src/main/java/br/com/bexchallange/service).
+* Classes Java para responsáveis por conter as regras de negócios, sendo acessados pelas demais classes, localizado em  [`service`](src/main/java/br/com/bexchallange/service).
 * Classes Java para responsáveis por representar funcionalidades com características utilitárias [`util`](src/main/java/br/com/bexchallange/util).
 * Arquivos de configuração estão localizados em [`resources`](src/main/resources).
+
+Nota: Endereço do projeto no Github: https://github.com/ccsjesus/bex-challange
 
 ## Utilização das APIs
 
