@@ -40,4 +40,9 @@ java -jar bex-challange.jar E:\bex-challange\input-routes.csv
 * Classes Java para responsáveis por representar funcionalidades com características utilitárias [`util`](src/main/java/br/com/bexchallange/util).
 * Arquivos de configuração estão localizados em [`resources`](src/main/resources).
 
-[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=SampleApp-CRUD-Java
+## Utilização das APIs
+
+ Uma vez que a aplicação esteja em execução basta acessar o seguinte endereço no navegador: **http://localhost:8080/swagger-ui.html#/**, neste endereço encontra-se as APIs desenvolvidas.
+ 
+
+
