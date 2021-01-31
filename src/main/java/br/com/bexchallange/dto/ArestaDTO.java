@@ -2,6 +2,8 @@ package br.com.bexchallange.dto;
 
 import com.opencsv.bean.CsvBindByPosition;
 
+import br.com.bexchallange.entity.BexsAresta;
+import br.com.bexchallange.entity.BexsVertice;
 import br.com.bexchallange.entity.Routes;
 
 public class ArestaDTO extends Routes {
@@ -46,6 +48,10 @@ public class ArestaDTO extends Routes {
 
 	public void setValor(int valor) {
 		this.valor = valor;
+	}
+	
+	public BexsAresta toBexAresta(){
+	    return new BexsAresta(new BexsVertice(origem), new BexsVertice(origem), valor);
 	}
 	
 	

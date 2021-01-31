@@ -73,9 +73,7 @@ public class BexRoutesServices {
 		});*/
 	}
 
-	public ResponseEntity<EntidadeResult> incluirRota(ArestaDTO arestaDTO) {
-		
-		BexsAresta bexAresta = new BexsAresta(new BexsVertice(arestaDTO.getOrigem()), new BexsVertice(arestaDTO.getDestino()), arestaDTO.getValor());
+	public ResponseEntity<EntidadeResult> incluirRota(BexsAresta bexAresta) {
 		
 		this.addAresta(bexAresta.getValor(), bexAresta.getOrigem().getNome(), bexAresta.getDestino().getNome());
 		

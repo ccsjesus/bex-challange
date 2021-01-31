@@ -22,7 +22,7 @@ public class BexsController {
 
 	@PostMapping("/")
 	public ResponseEntity<EntidadeResult> incluirRota(@RequestBody ArestaDTO arestaDTO) {
-		return bexRoutesServices.incluirRota(arestaDTO);
+		return bexRoutesServices.incluirRota(arestaDTO.toBexAresta());
 	}
 
 	@GetMapping("melhor-rota/{caminho}")
